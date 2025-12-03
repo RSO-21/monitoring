@@ -4,8 +4,8 @@ global:
 scrape_configs:
   - job_name: "partner-service"
     static_configs:
-      - targets: ["host.docker.internal:8000"]
+      - targets: ["partner-service:8000"]
 
   - job_name: "offer-service"
     static_configs:
-      - targets: ["host.docker.internal:8001"]
+      - targets: ["offer-service:8000"]
