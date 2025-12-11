@@ -9,3 +9,19 @@ scrape_configs:
   - job_name: "offer-service"
     static_configs:
       - targets: ["offer-service:8000"]
+
+  - job_name: "order-service"
+    static_configs:
+      - targets: ["order-service:8000"]
+
+  - job_name: "payment-service"
+    static_configs:
+      - targets: ["payment-service:8000"]
+
+  - job_name: "user-service"
+    static_configs:
+      - targets: ["user-service:8000"]
+
+  - job_name: "auth-service"
+    static_configs:
+      - targets: ["auth-service:8000"]
